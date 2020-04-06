@@ -73,3 +73,9 @@ ul.main-nav__fallback a {
 	cursor: pointer;
 	fill: #FC4A4A;
 }
+
+@media (max-width: 768px) {
+	nav.main-nav{
+		background: #151515;
+	}
+}

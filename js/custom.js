@@ -17,5 +17,16 @@ jQuery(function ($) {
             var scroll = $(window).scrollTop();
             console.log(scroll)
         });
+
+
+        // home_projects_filter change button
+        {
+            var $filterBtns = $('.home_projects_filter > .module-border-wrap');
+            $filterBtns.on('click', function(event) {
+                event.preventDefault();
+                $('.home_projects_filter > .module-border-wrap').removeClass('active');
+                $(this).addClass('active');
+            });
+        }
     });
 });

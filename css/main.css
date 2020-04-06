@@ -2,6 +2,7 @@ body{
     margin: 0!important;
     padding: 0;
     font-family: "Suisse Intl";
+    overflow-x: hidden;
 }
 img{
     max-width: 100%;
@@ -137,6 +138,6 @@ a{text-decoration:none;color:#FFF}
     pointer-events: none;
     border-radius: 50%
 }
-.site_cursor, .site_cursor a, button, input, textarea {
+/* .site_cursor, .site_cursor a, button, input, textarea {
     cursor: none
-}
+} */

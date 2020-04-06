@@ -1,4 +1,4 @@
-.home .page_title{
+.page_title{
     padding: 70px 0 91px;
 }
 /* Video */
@@ -65,6 +65,7 @@
     line-height: 35px;
     text-transform: uppercase;
     color: #FFFFFF;
+    font-weight: normal;
 }
 .service_description{
     flex-basis: 30%;
@@ -154,6 +155,48 @@
     padding: 0;
     margin: 0;
 }
+.home_projects_filter{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 67px 0 24px;
+    width: 1200px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.module-border-wrap {
+    position: relative;
+    padding: 1px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.module-border-wrap.active {
+    background: linear-gradient(to right, #FC4A4A, #DC26FA);
+}
+.module {
+    background: #fff;
+    font-family: Suisse Intl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%; 
+    border: 0; 
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.module-border-wrap:hover{
+    background: linear-gradient(to right, #FC4A4A, #DC26FA);
+}
 .home_projects_list li.no_thumbnail {
     align-items: center;
     min-height: 130px;
@@ -192,4 +235,66 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+/* Media  */
+@media (max-width: 992px) {
+    .service_title{
+        flex-basis: 45%;
+    }
+    .service_description{
+        flex-basis: 40%;
+    }
+    .home_services{
+        padding: 300px 0 150px;
+    }
+}
+@media (max-width: 768px) {
+    .page_title{
+        padding: 30px 0;
+    }
+    .home_video{
+        position: static;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        height: 200px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    /* Services */
+    .home_services{
+        padding: 30px 0;
+    }
+    .home_services_list li{
+        padding: 40px 0;
+    }
+    .home_services h2.heading.gradient_text{
+        font-size: 26px;
+        line-height: 30px;   
+    }
+    .service_icon_block,.service_title,.service_description{
+        flex-basis: 100%;
+    }
+    .service_icon_block div{
+        width: 50px;
+    }
+    .service_title{
+        font-size: 16px;
+        line-height: 19px;
+        padding: 30px 0;
+        margin: 0;
+    }
+    .service_description{
+        font-size: 16px;
+        line-height: 180%;
+        padding-right: 10%;
+    }
+}
+@media (max-width: 576px) {
+    .service_description{
+        padding-right: 0%;
+    }
 }
