@@ -21,12 +21,25 @@ jQuery(function ($) {
 
         // home_projects_filter change button
         {
-            var $filterBtns = $('.home_projects_filter > .module-border-wrap');
+            var $filterBtns = $('.home_projects_filter_body > .module-border-wrap');
             $filterBtns.on('click', function(event) {
                 event.preventDefault();
-                $('.home_projects_filter > .module-border-wrap').removeClass('active');
+                $('.home_projects_filter_body > .module-border-wrap').removeClass('active');
                 $(this).addClass('active');
             });
+        }
+
+        // home_projects_video play
+        {
+            var $projectsVideo = $('.home_projects_video');
+            $projectsVideo.each(function(index, el) {
+                var iconPlay = $('<img src="img/icon_play.png" class="video_no_play">')
+                $(this).after(iconPlay)
+            });
+            // $projectsVideo.on('click', function(event) {
+            //     event.preventDefault();
+            //     $(this).next($('img')).hide(0);
+            // });
         }
     });
 });

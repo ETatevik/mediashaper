@@ -18,6 +18,8 @@ img{
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    border: 0;
 }
 input, input:focus, input:active, button, button:focus, button:active{
     outline: none;
@@ -141,3 +143,38 @@ a{text-decoration:none;color:#FFF}
 /* .site_cursor, .site_cursor a, button, input, textarea {
     cursor: none
 } */
+
+/* etatev classes */
+.text-center{
+    text-align: center;
+}
+.align-content-center{
+    -ms-align-items: center;
+    align-items: center;
+}
+.order-sm-1{
+    order: 1;
+}
+.order-sm-2{
+    order: 2;
+}
+.order-sm-3{
+    order: 3;
+}
+.order-sm-4{
+    order: 4;
+}
+@media (max-width: 768px) {
+    .order-1{
+        order: 1 !important;
+    }
+    .order-2{
+        order: 2 !important;
+    } 
+    .order-3{
+        order: 3 !important;
+    }  
+    .order-4{
+        order: 4 !important;
+    }    
+}
