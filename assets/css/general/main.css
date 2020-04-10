@@ -8,18 +8,19 @@ img{
     max-width: 100%;
 }
 @font-face {font-family: "Suisse Intl";
-    src: url("../fonts/suisse.eot"); /* IE9*/
-    src: url("../fonts/suisse.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/suisse.woff2") format("woff2"), /* chrome、firefox */
-    url("../fonts/suisse.woff") format("woff"), /* chrome、firefox */
-    url("../fonts/suisse.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("../fonts/suisse.svg#Suisse Int'l Medium") format("svg"); /* iOS 4.1- */
+    src: url("../../fonts/suisse.eot"); /* IE9*/
+    src: url("../../fonts/suisse.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../../fonts/suisse.woff2") format("woff2"), /* chrome、firefox */
+    url("../../fonts/suisse.woff") format("woff"), /* chrome、firefox */
+    url("../../fonts/suisse.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../../fonts/suisse.svg#Suisse Int'l Medium") format("svg"); /* iOS 4.1- */
 }
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     border: 0;
+    padding: 0;
 }
 input, input:focus, input:active, button, button:focus, button:active{
     outline: none;
@@ -140,11 +141,11 @@ a{text-decoration:none;color:#FFF}
     pointer-events: none;
     border-radius: 50%
 }
-/* .site_cursor, .site_cursor a, button, input, textarea {
+.site_cursor, .site_cursor a, button, input, textarea {
     cursor: none
-} */
+}
 
-/* etatev classes */
+/* et classes */
 .text-center{
     text-align: center;
 }
@@ -176,5 +177,8 @@ a{text-decoration:none;color:#FFF}
     }  
     .order-4{
         order: 4 !important;
-    }    
+    }
+    .text-right-im{
+        text-align: right !important;
+    }     
 }

@@ -76,7 +76,7 @@
 
 /* Achieve */
 .home_achievements{
-    padding: 100px 0 148px;
+    padding: 100px 0 47px;
 }
 .home_achievements .heading{
     padding-bottom: 100px;
@@ -102,8 +102,15 @@
     text-transform: capitalize;
     color: #1C1A1B;
 }
-.hidden-for-mob{
+.home_achievements_body{
     margin-bottom: 120px;
+    padding: 0 15px;
+}
+.team_member{
+    max-width: 361px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 101px;
 }
 .member_image{
     background-color: #F7F7F7;
@@ -126,9 +133,6 @@
     text-transform: capitalize;
     color: #767373;
     margin-top: 14px;
-}
-.home_achievements .row .col-lg-4:nth-child(n+4){
-    margin-top: 100px;
 }
 /* Partners */
 .home_partners{
@@ -206,15 +210,8 @@
 .home_projects_video{
     width: 100%;
     position: relative;
-}
-.video_no_play{
-    display: block;
-    position: absolute;
-    top: calc(50% - 65px);
-    left:  calc(50% - 65px);
-    width: 130px;
-    height: 130px;
-    z-index: 10;
+    max-height: 704px;
+    margin-bottom: 30px;
 }
 .home_projects_list li.no_thumbnail {
     align-items: center;
@@ -231,9 +228,11 @@
 }
 .project_title{
     font-size: 30px;
-    line-height: 35px;
+    line-height: 50px;
     color: #1C1A1B;
-    margin-bottom: 30px;
+}
+.project_title > span{
+    display: block;
 }
 .projects_tad > h4{
     font-weight: normal;
@@ -243,21 +242,27 @@ h4.project_title_small{
     font-weight: normal;
 }
 .project_excerpt{
-    font-size: 18px;
-    line-height: 180%;
-    color: #767373;
-}
-.project_excerpt.project_excerpt_small{
     font-size: 14px;
 }
 .project_cats{
     position: absolute;
-    bottom: 20px;
-    left: 25px;
+    top: 20px;
+    right: 25px;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    white-space: nowrap;
+}
+.project_cats > li{
+    background: #F5F5F5;
+    margin: 0 5px;
+    border-radius: 2px;
 }
 .project_cats.project_cats_small{
     position: static;
-    display: block;
 }
 .project_cats.project_cats_for_mob{
     display: none;
@@ -266,10 +271,24 @@ h4.project_title_small{
     font-size: 14px;
     line-height: 180%;
     color: #000000;
-    background: #F5F5F5;
-    border-radius: 2px;
-    display: inline-block;
+    transition: .2s;
+    display: block;
     padding: 0 8px;
+}
+.home_projects_video:hover ~ .project_cats a,
+.project_cats:hover a,
+.project_cats.project_cats.project_cats_small li:hover a,
+.project_cats.project_cats_for_mob li:hover a{
+    background: linear-gradient(to right, #FC4A4A, #DC26FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.project_cats.project_cats.project_cats_small:hover a,
+.project_cats.project_cats_for_mob:hover a{
+    color: #000000;
+    -webkit-text-fill-color: #000000;
+    background-clip: unset;
+    background: transparent;
 }
 .project_cats a:not(:last-child){
     margin-right: 10px;
@@ -293,6 +312,7 @@ h4.project_title_small{
     text-transform: uppercase;
     color: #1C1A1B;
     transition: .2s;
+    cursor: pointer;
 }
 .home_projects_btn:hover{
     background: #1C1A1B;
@@ -310,8 +330,16 @@ h4.project_title_small{
     .home_services{
         padding: 300px 0 150px;
     }
-    .hidden-for-mob{
-        display: none;
+    .project_cats.project_cats_small{
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .project_cats.project_cats_small > li{
+        margin-bottom: 10px;
     }
 }
 @media (max-width: 768px) {
@@ -370,12 +398,6 @@ h4.project_title_small{
         font-size: 14px;
         line-height: 180%;
     }
-    .video_no_play{
-        width: 60px;
-        height: 60px;
-        top: calc(50% - 30px);
-        left: calc(50% - 30px);
-    }
     .project_excerpt{
         display: none;
     }
@@ -384,12 +406,23 @@ h4.project_title_small{
         line-height: 21px;
         margin: 16px 0;
     }
+    h4.project_title > span{
+        display: inline;
+    }
     .project_cats{
         display: none;
     }
     .project_cats.project_cats_for_mob{
-        display: block;
+        display: flex;
         position: static;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .project_cats.project_cats_for_mob > li{
+        margin: 0 10px 5px 0;
     }
     .project_cats.project_cats_for_mob a,
     .project_cats.project_cats_small a{
@@ -398,6 +431,11 @@ h4.project_title_small{
     }
     .project_cats.project_cats_small{
         margin-top: 43px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
     }
     .home_projects_list li.with_thumbnail.align-content-center{
         padding: 30px 0;
@@ -411,7 +449,7 @@ h4.project_title_small{
     }
     /* Partners */
     .home_partners{
-        margin: 56px 0;
+        margin: 56px 0 0;
     }
     .home_partners .heading{
         margin-bottom: 56px;
@@ -419,6 +457,43 @@ h4.project_title_small{
     .partners_image{
         max-width: 86px;
         margin: 7.5px 0;
+    }
+    /* Achieve */
+    .home_achievements{
+        padding: 30px 5px;
+    }
+    .home_achievements .heading{
+        padding-bottom: 30px;
+    }
+    .achieve_block{
+        padding: 34px 0;
+    }
+    .achievement_big{
+        font-size: 56px;
+        line-height: 56px;
+    }
+    .achievement_small{
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .home_achievements_body{
+        margin-bottom: 40px;
+    }
+    .member_name{
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 19px;
+    }
+    .member_position{
+        font-size: 16px;
+        margin-top: 3.5px;
+    }
+    .member_image{
+        height: 200px;
+    }
+    .team_member{
+        margin-bottom: 40px;
     }
 }
 @media (max-width: 576px) {
