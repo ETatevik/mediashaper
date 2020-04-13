@@ -1,5 +1,5 @@
 /* Main */
-@import "general/main.css";
+@import "layouts/main.css";
 
 /* Menu */
 @import "layouts/menu.css";
@@ -18,3 +18,6 @@
 
 /* Services page*/
 @import "pages/services.css";
+
+/* Projects Single modal */
+@import "layouts/projects_single.css";
