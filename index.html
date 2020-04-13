@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap">
     <link rel="stylesheet" href="//db.onlinewebfonts.com/c/501e03d4c0303f394033bcaf435f4b3e?family=Suisse+Int'l+Medium">
-    <link rel="stylesheet" href="https://use.typekit.net/phg5cnq.css">
+
     <link rel="stylesheet" href="assets/css/general.css">
 </head>
 
@@ -20,38 +21,9 @@
             <p class="site_title">
                 <a href="#" rel="home">MEDIASHAPER</a>
             </p>
-            <label class="main-nav-open nav-toggle" for="main-nav-toggle" tabindex="0" aria-label="Menu">
-                <svg aria-hidden="true" width="28px" height="20px" viewBox="0 0 28 20">
-                    <rect x="0" y="2" width="28" height="2"></rect>
-                    <rect x="0" y="10" width="24" height="2"></rect>
-                    <rect x="0" y="18" width="28" height="2"></rect>
-                </svg>
-            </label>
-            <input type="checkbox" id="main-nav-toggle"/>
-            <nav class="main-nav">
-                <ul class="main-nav__fallback">
-                    <li>
-                        <a href="#observatory">Observatory</a>
-                    </li>
-                    <li>
-                        <a href="#research">Research</a>
-                    </li>
-                    <li>
-                        <a href="#events">Events</a>
-                    </li>
-                    <li>
-                        <a href="#members">Members</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <label class="main-nav__close nav-toggle" for="main-nav-toggle" tabindex="0" aria-label="Close menu">
-                    <svg aria-hidden="true" width="24" height="22px" viewBox="0 0 24 22">
-                        <path d="M11 9.586L20.192.393l1.415 1.415L12.414 11l9.193 9.192-1.415 1.415L11 12.414l-9.192 9.193-1.415-1.415L9.586 11 .393 1.808 1.808.393 11 9.586z">
-                    </svg>
-                </label>
-            </nav>
+            <button type="button" class="btn-nav-open nav-toggle">---
+                <i class="three-line-icon"></i>
+            </button>
         </div>
 
         <div class="container">
@@ -96,6 +68,14 @@
             </video>
         </div>
     </header>
+    
+    <!-- Menu modal -->
+    <div class="et-modal">
+        <div class="et-modal-container">
+          <nav class="main-nav">
+            </nav>  
+        </div>
+    </div>
 
     <main>
         <div class="home_services">
@@ -395,29 +375,34 @@
         </div>
 
         <div class="home_achievements">
-            <div class="container">
-                <h2 class="heading gradient_text active_gradient">Our team</h2>
-                <div class="row no-gutters home_achievements_body">
-                    <div class="col-lg-3">
-                        <div class="achieve_block">
-                            <div class="achievement_big">7</div>
-                            <div class="achievement_small">ЛЕТ ОПЫТА</div>
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="achieve_block">
-                            <div class="achievement_big">350+</div>
-                            <div class="achievement_small">ЗАВЕРШЕННЫХ ПРОЕКТОВ</div>
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="achieve_block">
-                            <div class="achievement_big">70</div>
-                            <div class="achievement_small">ДОВОЛЬНЫХ КЛИЕНТОВ</div>
-                        </div>
-                    </div>
-                </div> <!--home_achievements_body--> 
+            <div class="home_achievements_body">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <h2 class="heading gradient_text active_gradient col-12">ДОСТИЖЕНИЯ</h2>
 
+                        <div class="col-lg-3">
+                            <div class="achieve_block">
+                                <div class="achievement_big">7</div>
+                                <div class="achievement_small">ЛЕТ ОПЫТА</div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="achieve_block">
+                                <div class="achievement_big">350+</div>
+                                <div class="achievement_small">ЗАВЕРШЕННЫХ ПРОЕКТОВ</div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="achieve_block">
+                                <div class="achievement_big">70</div>
+                                <div class="achievement_small">ДОВОЛЬНЫХ КЛИЕНТОВ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--home_achievements_body--> 
+            
+            <div class="container">
                 <div class="row team_member_block">
                     <div class="col-6 col-lg-4">
                         <div class="team_member">
@@ -562,12 +547,11 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="assets/js/plugins/cursor.js"></script>
+<!-- <script src="assets/js/plugins/cursor.js"></script> -->
 <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script src="assets/js/plugins/pixi.min.js"></script>
 <script src="assets/js/plugins/main.js"></script>
-<script src="assets/js/index.js"></script>
+<script src="assets/js/general.js"></script>
 
 </body>
 </html>

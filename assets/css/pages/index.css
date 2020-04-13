@@ -76,13 +76,13 @@
 
 /* Achieve */
 .home_achievements{
-    padding: 100px 0 47px;
+    padding: 0 0 47px;
 }
 .home_achievements .heading{
     padding-bottom: 100px;
 }
 .achieve_block{
-    background: #FFFFFF;
+    background: transparent;
     border: 1px solid #E5E5E5;
     box-sizing: border-box;
     padding: 60px 0 68px;
@@ -102,9 +102,16 @@
     text-transform: capitalize;
     color: #1C1A1B;
 }
+.achievements_dark_style .achievement_big,
+.achievements_dark_style .achievement_small{
+    color: #FFFFFF;   
+}
 .home_achievements_body{
-    margin-bottom: 120px;
-    padding: 0 15px;
+    padding: 100px 15px 120px;
+}
+.achievements_dark_style{
+    background: #3E3E3E;
+    margin-bottom: 70px;
 }
 .team_member{
     max-width: 361px;
@@ -397,6 +404,7 @@ h4.project_title_small{
     .module{
         font-size: 14px;
         line-height: 180%;
+        padding: 8px 15px;
     }
     .project_excerpt{
         display: none;
@@ -460,7 +468,7 @@ h4.project_title_small{
     }
     /* Achieve */
     .home_achievements{
-        padding: 30px 5px;
+        padding: 0px 0px 30px;
     }
     .home_achievements .heading{
         padding-bottom: 30px;
@@ -478,7 +486,11 @@ h4.project_title_small{
         line-height: 23px;
     }
     .home_achievements_body{
-        margin-bottom: 40px;
+        padding: 30px 20px 40px;
+    }
+    .team_member_block{
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .member_name{
         font-size: 18px;

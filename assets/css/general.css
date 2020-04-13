@@ -12,3 +12,6 @@
 
 /* Home */
 @import "pages/index.css";
+
+/* Projects */
+@import "pages/projects.css";

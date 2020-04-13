@@ -1,0 +1,48 @@
+.et-projects-list li:hover{
+    background: linear-gradient(90.43deg, #FC4A4A 0.04%, #6722FA 99.97%);
+}
+.et-projects-list li *{
+	transition: .2s;
+}
+.et-projects-list li:hover *{
+    color: #ffffff !important;
+}
+.et-projects-list li:hover path{
+	fill: #ffffff;
+}
+
+.et-projects-list li:hover .project_cats.project_cats.project_cats_small li a{
+    background: linear-gradient(to right, #FC4A4A, #DC26FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.et-projects-list li .project_cats.project_cats.project_cats_small li:hover{
+	background:#F5F5F5;
+}
+.et-projects-list li .project_cats.project_cats.project_cats_small li:hover a{
+    background: linear-gradient(to right, #FC4A4A, #DC26FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.et-projects-filter > .home_projects_filter_body{
+	padding-top: 110px;
+	padding-bottom: 84px
+}
+h2.et-project-head{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 96px;
+}
+
+/* Media */
+@media (max-width: 768px) {
+	.et-projects-filter > .home_projects_filter_body{
+		padding-top: 40px;
+		padding-bottom: 36px
+	}
+	h2.et-project-head{
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 46px;
+	}
+}
