@@ -19,13 +19,33 @@ jQuery(function ($) {
             }
         }
 
-        // home_projects_filter change button
+        // projects_filter change button
         {
             var $filterBtns = $('.home_projects_filter_body > .module-border-wrap');
             $filterBtns.on('click', function(event) {
                 event.preventDefault();
                 $('.home_projects_filter_body > .module-border-wrap').removeClass('active');
                 $(this).addClass('active');
+            });
+        }
+
+        // MENU
+        {
+            $('.et-menu-modal').slideUp(0);
+            $('.btn-nav-open').on('click', function(event) {
+                event.preventDefault();
+                if(!$(this).hasClass('active')){
+                    $('header').addClass('dark-header');
+                    $(this).addClass('active');
+                    $('.et-menu-modal').slideDown(500);
+                    $('body').css('overflow', 'hidden');
+                }else{
+                    $('header').removeClass('dark-header');
+                    $(this).removeClass('active');
+                    $('.et-menu-modal').slideUp(500);
+                    $('body').removeAttr('style')
+                }
+                
             });
         }
     });

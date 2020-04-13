@@ -1,9 +1,18 @@
 header{
     padding: 0 30px 351px;
     position: relative;
+    transition: .5s;
 }
 header.pages_small_header{
     padding: 0 30px 0;
+}
+header.dark-header{
+    background: #333232;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+header.dark-header .site_title a{
+    color: #ffffff;
 }
 .header_top{
     min-height: 80px;
@@ -21,15 +30,7 @@ header.pages_small_header{
     text-transform: uppercase;
     text-decoration: none;
     color: #1C1A1B;
-}
-.burger span{
-    display: block;
-    width: 26px;
-    height: 2px;
-    background: #000000;
-}
-.burger span:first-child{
-    margin-bottom: 6px;
+    transition: .5s;
 }
 /* Header Menu */
 #primary-menu{
@@ -92,7 +93,46 @@ header.pages_small_header{
         background-position: 0% 50%;
     }
 }
-
+.btn-nav-open{
+    width: 26px;
+    height: 10px;
+    position: relative;
+    background: transparent;
+}
+.btn-nav-open:before,
+.btn-nav-open:after{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background: #000000;
+    left: 0;
+    transition: .5s;
+}
+.btn-nav-open:before{
+    top: 0;
+}
+.btn-nav-open:after{
+    bottom: 0;
+}
+.btn-nav-open.active:before,
+.btn-nav-open.active:after{
+    top: calc(50% - 1px);
+    background: #FFFFFF;
+}
+.btn-nav-open.active:before{
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+}
+.btn-nav-open.active:after{
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
 /* Media  */
 @media (max-width: 768px) {
     header,
@@ -100,7 +140,7 @@ header.pages_small_header{
         padding: 0; 
     }
     .header_top, header > .container{
-        padding: 0 12px;
+        padding: 0 20px;
     }
     .gradient_text{
         font-size: 30px;
