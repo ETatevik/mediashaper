@@ -10,8 +10,11 @@
 /* Footer */
 @import "layouts/footer.css";
 
-/* Home */
+/* Index page */
 @import "pages/index.css";
 
-/* Projects */
+/* Projects page*/
 @import "pages/projects.css";
+
+/* Services page*/
+@import "pages/services.css";
