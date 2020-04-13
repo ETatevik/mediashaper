@@ -48,5 +48,26 @@ jQuery(function ($) {
                 
             });
         }
+
+        // PROJECTS
+        {
+            // Projest-single modal: click btn-open-singleProject button and open Modal
+            {
+                $('#et-project-modal').fadeOut(0);
+                $('.btn-open-singleProject').on('click', function(event) {
+                    event.preventDefault();
+                    $('#et-project-modal').fadeIn(500);
+                });
+                // cliclk  or et-project-container or roject-big-container or close-project-single button and close Modal
+                $('#et-project-modal').on('click', function(event) {
+                    event.preventDefault();
+                    if(event.target.className == 'et-project-container' 
+                        || event.target.className == 'container project-big-container' 
+                        || event.target.className == "close-project-single"){
+                        $('#et-project-modal').fadeOut(500);
+                    }
+                });
+            }
+        }
     });
 });
