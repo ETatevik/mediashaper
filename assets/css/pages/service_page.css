@@ -75,12 +75,19 @@
 		display: none;
 	}
 	header.header-parallax-scroll{
-		background-color: #4545A5;
-		height: 100vh;
+		/* background-color: #4545A5;
+		height: 100vh; */
 		overflow: hidden;
+		padding: 0;
 	}
 	header.header-parallax-scroll .parallax{
 		height: 100%;
+	}
+	header.header-parallax-scroll .parallax-title{
+		padding: 0 30px 0;
+	}
+	header.header-parallax-scroll.dark-header .parallax-title{
+		padding-right: 0;
 	}
 	header.header-parallax-scroll .site_title a{
 		color: #ffffff;
@@ -90,8 +97,10 @@
 		background: #ffffff;
 	}
 	header.header-parallax-scroll .parallax-image-container{
-		height: 110%;
+		height: 100%;
 		text-align: right;
+		background-color: #4545A5;
+		padding: 0 30px 0;
 	}
 	header.header-parallax-scroll .parallax-image{
 		height: 100%;
