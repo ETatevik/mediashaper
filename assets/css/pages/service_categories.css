@@ -1,0 +1,38 @@
+.service-categories-projects{
+	padding: 129px 0 0;
+}
+.service-categories-projects h2{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 56px;
+	line-height: 66px;
+	text-transform: uppercase;
+	margin-bottom: 117px;
+}
+.service-categories-projects .home_projects_list li:first-of-type {
+	border-top: 1px solid #E5E5E5;
+}
+.service-categories-projects .home_projects_list li {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+/* Meida */
+@media (max-width: 992px) {
+	.service_categories-body{
+		padding: 30px 5px;
+	}
+}
+@media (max-width: 768px) {
+	.service-categories-projects{
+		padding: 0;
+	}
+	.service-categories-projects .home_projects_list li:first-of-type {
+		border-top: 0;
+	}
+	.service-categories-projects h2{
+		font-weight: normal;
+		font-size: 26px;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
+}

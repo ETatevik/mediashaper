@@ -4,7 +4,6 @@
 .service-text-block{
 	padding: 70px 80px 40px;
 	max-width: 1017px;
-	margin: auto;
 }
 .service-text-block h3{
 	font-style: normal;
@@ -70,6 +69,15 @@
 }
 
 /* Media */
+@media (min-width: 1200px) {
+	.service-slider{
+		margin: auto;
+		max-width: 1119px;
+	}
+	.service-text-block{
+		margin: auto;
+	}
+}
 @media (min-width: 768px) {
 	header.header-services-for-mob{
 		display: none;

@@ -160,7 +160,7 @@
 }
 .home_projects_list{
     list-style: none;
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
 }
 .home_projects_filter{
