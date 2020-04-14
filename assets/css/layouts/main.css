@@ -4,7 +4,20 @@ body{
     font-family: "Suisse Intl";
     overflow-x: hidden;
 }
+body::-webkit-scrollbar{
+    width: 6px
+}
+body::-webkit-scrollbar-track{
+    background:#f1f1f1
+}
+body::-webkit-scrollbar-thumb{
+    background: #666666
+}
+body::-webkit-scrollbar-thumb:hover{
+    background:#1C1A1B
+}
 img{
+
     max-width: 100%;
 }
 @font-face {font-family: "Suisse Intl";

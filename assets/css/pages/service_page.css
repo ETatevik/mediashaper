@@ -4,6 +4,7 @@
 .service-text-block{
 	padding: 70px 80px 40px;
 	max-width: 1017px;
+	margin: auto;
 }
 .service-text-block h3{
 	font-style: normal;
@@ -74,11 +75,12 @@
 		display: none;
 	}
 	header.header-parallax-scroll{
-		background-repeat: no-repeat;
-		background-size: auto 100%;
-		background-position: 100% 50%;
 		background-color: #4545A5;
 		height: 100vh;
+		overflow: hidden;
+	}
+	header.header-parallax-scroll .parallax{
+		height: 100%;
 	}
 	header.header-parallax-scroll .site_title a{
 		color: #ffffff;
@@ -87,8 +89,12 @@
 	header.header-parallax-scroll .btn-nav-open:after{
 		background: #ffffff;
 	}
+	header.header-parallax-scroll .parallax-image-container{
+		height: 150%;
+		text-align: right;
+	}
 	header.header-parallax-scroll .parallax-image{
-		height: 100vh;
+		height: 100%;
 	}
 	header.header-parallax-scroll .parallax-image > img{
 		height: 100%;
