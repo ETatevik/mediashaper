@@ -1,5 +1,7 @@
 .et-projects-list li:hover{
     background: linear-gradient(90.43deg, #FC4A4A 0.04%, #6722FA 99.97%);
+	padding-left: 20px !important;
+	padding-right: 20px !important;
 }
 .et-projects-list li *{
 	transition: .2s;
