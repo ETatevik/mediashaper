@@ -101,5 +101,22 @@ jQuery(function ($) {
                 console.log(e.message);
             }
         }
+
+        // Write Us btn and modal
+        {
+            $('.btn-open-writeUs').on('click', function(event) {
+                event.preventDefault();
+                $('.et-writeUs-modal').removeClass('hide');
+            });
+            // click  or et-writeUs-modal or et-writeUs-container or btn-close-writeUs button and close Modal
+            $('.et-writeUs-modal').on('click', function(event) {
+                event.preventDefault();
+                if(event.target.className == 'et-writeUs-modal' 
+                    || event.target.className == 'et-writeUs-container' 
+                    || event.target.className == "btn-close-writeUs"){
+                    $('.et-writeUs-modal').addClass('hide');
+                }
+            });
+        }
     });
 });

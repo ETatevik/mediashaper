@@ -4,6 +4,9 @@
 /* Menu */
 @import "layouts/menu.css";
 
+/* Write US btn and Modal */
+@import "layouts/writeUs.css";
+
 /* Header */
 @import "layouts/header.css";
 
