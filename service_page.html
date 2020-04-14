@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap">
     <link rel="stylesheet" href="//db.onlinewebfonts.com/c/501e03d4c0303f394033bcaf435f4b3e?family=Suisse+Int'l+Medium">
 
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" href="assets/css/general.css">
 </head>
 
@@ -16,7 +17,7 @@
     <div class="circle-cursor circle-cursor--inner"></div>
     <div class="circle-cursor circle-cursor--outer"></div>
 
-    <header class="pages_small_header">
+    <header class="pages_small_header bg-parallax-scroll">
         <div class="header_top">
             <p class="site_title">
                 <a href="index.html" rel="home">MEDIASHAPER</a>
@@ -25,8 +26,11 @@
         </div>
         <div class="service_page_header">
         	<div class="container">
-        		<h2>Веб дизайн</h2>
+        		<h2>Веб <span>дизайн</span></h2>
         	</div>
+        	<div class="service-header-img-mob">
+		       	<img src="assets/images/services/header-bg.png" alt="">
+		    </div>
         </div> <!--service_page_header-->
     </header>
     
@@ -90,123 +94,78 @@
 
     <main>
         <div class="service-page-info-block">
-        	<div class="container">
-        		<h3>Why do we use it?</h3>
-	        	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	        	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-	        	<div class="service-info-img">
+        	<div class="service-text-block">
+        		<div class="container">
+        			<h3>Why do we use it?</h3>
+		        	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		        	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+		        </div>
+        	</div>
+        		
+	   		<div class="service-info-img">
+	   			<div class="container">
 	        		<img src="assets/images/services/infoImg-1.png" alt="">
 	        	</div>
-	        	<h3>Where does it come from?</h3>
-	        	<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-	        	<video allowfullscreen controls poster="assets/images/index/block-project/project_img1.jpg">
-	                <source src="video.mp4" type="video/mp4">
-	                Your browser does not support the video tag.
-	            </video>
-	            <h3>Why do we use it?</h3>
-	            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-	            <div class="service-slider">
-					<div class="wrapper">
-						<div class="slide">
+	     	</div>
+
+        	<div class="service-text-block">
+				<div class="container">
+		        	<h3>Where does it come from?</h3>
+		        	<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+		        </div>
+		    </div>
+
+			<div class="service-info-video">
+				<div class="container">
+					<video allowfullscreen controls poster="assets/images/index/block-project/project_img1.jpg">
+		                <source src="video.mp4" type="video/mp4">
+		                Your browser does not support the video tag.
+		            </video>
+		        </div>
+			</div>
+
+        	<div class="service-text-block">
+        		<div class="container">
+		            <h3>Why do we use it?</h3>
+		            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+		        </div>
+	        </div>
+
+	        <div class="service-slider">
+	            <div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
 							<img src="assets/images/services/slider/item-1.png" alt="">
 						</div>
-						<div class="slide">
+						<div class="swiper-slide">
 							<img src="assets/images/services/slider/item-2.png" alt="">
 						</div>
-						<div class="slide">
+						<div class="swiper-slide">
 							<img src="assets/images/services/slider/item-3.png" alt="">
 						</div>
-						<div class="slide">
+						<div class="swiper-slide">
 							<img src="assets/images/services/slider/item-1.png" alt="">
 						</div>
-						<div class="slide">
+						<div class="swiper-slide">
 							<img src="assets/images/services/slider/item-2.png" alt="">
 						</div>
-						<div class="slide">
+						<div class="swiper-slide">
 							<img src="assets/images/services/slider/item-3.png" alt="">
 						</div>
 					</div>
-	            </div>
-	            <h3>Where can I get some?</h3>
-	            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-        	</div>
+		        </div>
+		        <div class="slider-btns">
+		            <div class="swiper-button-prev"></div>
+    				<div class="swiper-button-next"></div>
+		        </div>
+	        </div>
+        	<div class="service-text-block">
+        		<div class="container">
+		            <h3>Where can I get some?</h3>
+		            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+		        </div>
+	        </div>
         </div> <!--service-page-info-block-->
-		
-        <div class="home_achievements">
-            <div class="home_achievements_body achievements_dark_style">
-            	<div class="container">
-            		<div class="row no-gutters">
-	                	<h2 class="heading gradient_text active_gradient col-12">ДОСТИЖЕНИЯ</h2>
-
-	                    <div class="col-lg-3">
-	                        <div class="achieve_block">
-	                            <div class="achievement_big">7</div>
-	                            <div class="achievement_small">ЛЕТ ОПЫТА</div>
-	                        </div>
-	                    </div>
-	                    <div class="col-lg">
-	                        <div class="achieve_block">
-	                            <div class="achievement_big">350+</div>
-	                            <div class="achievement_small">ЗАВЕРШЕННЫХ ПРОЕКТОВ</div>
-	                        </div>
-	                    </div>
-	                    <div class="col-lg">
-	                        <div class="achieve_block">
-	                            <div class="achievement_big">70</div>
-	                            <div class="achievement_small">ДОВОЛЬНЫХ КЛИЕНТОВ</div>
-	                        </div>
-	                    </div>
-	                </div>
-                </div>
-            </div> <!--home_achievements_body--> 
-			
-			<div class="container">
-				<div class="row team_member_block">
-                    <div class="col-6 col-lg-4">
-                        <div class="team_member">
-                            <div style="background-image:url('assets/images/index/block-teamMember/member-1.png')" class="member_image"></div>
-                            <h5 class="member_name">ЭДВАРД</h5>
-                            <p class="member_position">CEO</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-4">
-                        <div class="team_member">
-                            <div style="background-image:url('assets/images/index/block-teamMember/member-2.png')" class="member_image"></div>
-                            <h5 class="member_name">АРТЕМ</h5>
-                            <p class="member_position">Веб-дизайнер</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-4">
-                        <div class="team_member">
-                            <div style="background-image:url('assets/images/index/block-teamMember/member-3.png')" class="member_image"></div>
-                            <h5 class="member_name">АННА</h5>
-                            <p class="member_position">Backand разработчик</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-4">
-                        <div class="team_member">
-                            <div style="background-image:url('assets/images/index/block-teamMember/member-4.png')" class="member_image"></div>
-                            <h5 class="member_name">ЭДВАРД</h5>
-                            <p class="member_position">CEO</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-4">
-                        <div class="team_member">
-                            <div style="background-image:url('assets/images/index/block-teamMember/member-5.png')" class="member_image"></div>
-                            <h5 class="member_name">АРТЕМ</h5>
-                            <p class="member_position">Веб-дизайнер</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-4">
-                        <div class="team_member">
-                            <div style="background-image:url('assets/images/index/block-teamMember/member-6.png')" class="member_image"></div>
-                            <h5 class="member_name">АННА</h5>
-                            <p class="member_position">Backand разработчик</p>
-                        </div>
-                    </div>
-                </div> <!--team_member_block-->
-			</div>
-        </div> <!--home_achievements-->
     </main>
 
     <footer>
@@ -309,6 +268,7 @@
 <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script src="assets/js/plugins/main.js"></script>
+<script src="assets/js/plugins/swiper.min.js"></script>
 <script src="assets/js/general.js"></script>
 
 </body>

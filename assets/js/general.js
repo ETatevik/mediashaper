@@ -69,5 +69,37 @@ jQuery(function ($) {
                 });
             }
         }
+
+        // SERVICE SLIDER
+        {
+            try {
+                var mySwiper = new Swiper ('.swiper-container', {
+                    direction: 'horizontal',
+                    slidesPerView: 'auto',
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        456:{
+                            slidesPerView: 2
+                        },
+                        556: {
+                            slidesPerView: 2.5
+                        },
+                        768: {
+                            slidesPerView: 2
+                        },
+                        992: {
+                            slidesPerView: 2.8
+                        }
+                    }
+                });
+            } catch(e) {
+                console.log(e.message);
+            }
+        }
     });
 });
