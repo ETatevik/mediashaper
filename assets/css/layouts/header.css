@@ -20,6 +20,7 @@ header.dark-header .site_title a{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    transition: .4s;
 }
 .site_title a{
     font-family: Righteous;

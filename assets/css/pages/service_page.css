@@ -70,23 +70,31 @@
 
 /* Media */
 @media (min-width: 768px) {
-	/* Delete this styel */
-	header.bg-parallax-scroll{
+	header.header-services-for-mob{
+		display: none;
+	}
+	header.header-parallax-scroll{
 		background-repeat: no-repeat;
 		background-size: auto 100%;
 		background-position: 100% 50%;
 		background-color: #4545A5;
-		min-height: 100vh;
-	}/* Delete this styel */
-	header.bg-parallax-scroll .site_title a{
+		height: 100vh;
+	}
+	header.header-parallax-scroll .site_title a{
 		color: #ffffff;
 	}
-	header.bg-parallax-scroll .btn-nav-open:before,
-	header.bg-parallax-scroll .btn-nav-open:after{
+	header.header-parallax-scroll .btn-nav-open:before,
+	header.header-parallax-scroll .btn-nav-open:after{
 		background: #ffffff;
 	}
+	header.header-parallax-scroll .parallax-image{
+		height: 100vh;
+	}
+	header.header-parallax-scroll .parallax-image > img{
+		height: 100%;
+	}
 	.service_page_header{
-		min-height: calc(100vh - 80px);
+		height: calc(100% - 80px);
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -118,9 +126,11 @@
 	}
 }
 @media (max-width: 768px) {
-	header.bg-parallax-scroll{
-		min-height: auto;
-		background: transparent;
+	header.header-services-for-mob{
+		display: block;
+	}
+	header.header-parallax-scroll{
+		display: none !important;
 	}
 	.service-page-info-block{
 		margin-bottom: 0;
