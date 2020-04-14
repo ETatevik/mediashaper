@@ -65,7 +65,7 @@
 }
 .btn-open-writeUs{
 	position: absolute;
-	left: -115px;
+	left: -116px;
 	top:  calc(50% - 52px);
 	height: 52px;
 	width: 180px;
@@ -82,6 +82,7 @@
 	transform: rotate(90deg);
 	background: #FFFFFF;
 	border: 1px solid #000000;
+	border-top: 0;
 }
 .btn-open-writeUs:before{
 	content: '';

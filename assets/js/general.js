@@ -100,6 +100,15 @@ jQuery(function ($) {
             } catch(e) {
                 console.log(e.message);
             }
+
+            // Services BG animated
+            {
+                $('.et-services-block').mousemove(function(e) {
+                    var offset = $(this).offset();
+                    x = e.pageX- offset.left;
+                    $(this).find('.et-bg-animated').css('transform','translateX('+ -x +'px'+')');
+                }).resize();
+            }
         }
 
         // Write Us btn and modal

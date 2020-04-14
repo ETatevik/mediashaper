@@ -12,8 +12,21 @@
 }
 .et-services-block{
 	border: 1px solid #E5E5E5;
+	position: relative;
+	overflow: hidden;
 }
-.et-services-block > a{
+.et-services-block .et-bg-animated{
+    height: 100%;
+    width: 200%;
+    display: inline-block;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: transparent;
+}
+.et-services-block > .et-bg-animated-content{
 	display: flex;
 	justify-content: center;
 	-ms-align-items: center;
@@ -26,8 +39,9 @@
 	font-size: 36px;
 	color: #000000;
 	transition: .2s;
+    z-index: 9;
 }
-.et-services-block > a:after{
+.et-services-block > .et-bg-animated-content:after{
 	content: '';
 	display: inline-block;
 	width: 101px;
@@ -38,11 +52,13 @@
 	background-image: url('../../images/icons/services-arrow.png');
 	margin-left: 13px;
 }
-.et-services-block > a:hover{
-	background: linear-gradient(90.09deg, #FC7D7D 0.04%, #6722FA 99.97%), #FFFFFF;
+.et-services-block:hover .et-bg-animated{
+    background: linear-gradient(90deg,#FC7D7D 0,#6722FA 100%);
+}
+.et-services-block:hover > .et-bg-animated-content{
 	color: #ffffff;
 }
-.et-services-block > a:hover:after{
+.et-services-block:hover > .et-bg-animated-content:after{
 	background-image: url('../../images/icons/services-arrow-hover.png');
 	width: 58px;
 	margin-left: 34px;
@@ -78,10 +94,10 @@
 		padding: 40px 15px;
 		font-size: 24px;
 	}
-	.et-services-block > a:after{
+	.et-services-block > .et-bg-animated-content:after{
 		width: 42.29px;
 	}
-	.et-services-block > a:hover:after{
+	.et-services-block:hover > .et-bg-animated-content:after{
 		background-image: url('../../images/icons/services-arrow-hover.png');
 		width: 42.29px;
 		margin-left: 13px;
