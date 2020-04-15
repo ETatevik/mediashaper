@@ -30,3 +30,6 @@
 
 /* Service_categories page */
 @import "pages/service_categories.css";
+
+/* News page */
+@import "pages/news.css";
