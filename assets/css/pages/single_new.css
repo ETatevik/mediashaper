@@ -1,0 +1,123 @@
+.service-page-info-block.single-new-body{
+	margin-bottom: 0;
+}
+h3.single-new-head{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 180%;
+	color: #FFFFFF;
+	max-width: 1000px;
+	width: 100%;
+	margin-top: 10%;
+}
+.single-new-img-grid img{
+	width: 100%;
+	height: 100%;
+}
+.img-grid-col{
+	padding: 15px !important;
+}
+.single-slide-title{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 48px;
+	color: #1C1A1B;
+	padding-bottom: 70px;
+}
+.single-slider-hide > .single-slide-title{
+	padding-top: 70px;
+}
+.single-new-like-block{
+	background: #F5F5F5;
+	padding: 23px 20px;
+	margin-top: 30px;
+}
+.single-new-like-block > .container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.single-new-like-block p{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 48px;
+	color: #1C1A1B;
+}
+.single-new-socPages{
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-left: 60px;
+}
+.single-new-socPages li{
+	margin: 0 15px;
+}
+.single-new-socPages img{
+	width: 44.54px;
+	height: 44.54px;
+}
+.single-new-news-block h2{
+	padding: 70px 0;
+	max-width: 492px;
+}
+/* Media */
+@media (max-width: 992px) {
+	.single-new-img-grid{
+		padding: 7.5px;
+	}
+	.img-grid-col{
+		padding: 7.5px !important;
+	}
+}
+@media (max-width: 768px) {
+	h3.single-new-head{
+		font-size: 30px;
+		line-height: 46px;
+		color: #0A0A0A;
+		margin-top: 0;
+	}
+	.single-slider-hide{
+		display: none;
+	}
+	.single-slide-title{
+		font-size: 24px;
+		line-height: 180%;
+		padding-bottom: 30px;
+	}
+	#single-slider-start{
+		margin-bottom: 50px;
+	}
+	.single-new-like-block > .container{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.single-new-like-block{
+		padding: 27px 20px;
+	}
+	.single-new-like-block p{
+		font-size: 14px;
+	}
+	.single-new-socPages{
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.single-new-news-block h2{
+		max-width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}

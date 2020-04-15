@@ -33,3 +33,6 @@
 
 /* News page */
 @import "pages/news.css";
+
+/* Single_new page */
+@import "pages/single_new.css";

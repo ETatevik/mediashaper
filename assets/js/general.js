@@ -73,7 +73,7 @@ jQuery(function ($) {
         // SERVICE SLIDER
         {
             try {
-                var mySwiper = new Swiper ('.swiper-container', {
+                var mySwiper = new Swiper ('#et-service-gallery > .swiper-container', {
                     direction: 'horizontal',
                     slidesPerView: 'auto',
                     slidesPerView: 1.5,
@@ -126,6 +126,67 @@ jQuery(function ($) {
                     $('.et-writeUs-modal').addClass('hide');
                 }
             });
+        }
+
+        // SINGLE_NEW page SLiders
+        {
+            try {
+                var mySwiper2 = new Swiper ('#single-slider-start > .swiper-container', {
+                    direction: 'horizontal',
+                    slidesPerView: 'auto',
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        456:{
+                            slidesPerView: 2
+                        },
+                        556: {
+                            slidesPerView: 2.5
+                        },
+                        768: {
+                            slidesPerView: 2
+                        },
+                        992: {
+                            slidesPerView: 2.8
+                        }
+                    }
+                });
+            } catch(e) {
+                console.log(e.message);
+            }
+
+            try {
+                var mySwiper3 = new Swiper ('#single-slider-end >.swiper-container', {
+                    direction: 'horizontal',
+                    slidesPerView: 'auto',
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        456:{
+                            slidesPerView: 2
+                        },
+                        556: {
+                            slidesPerView: 2.5
+                        },
+                        768: {
+                            slidesPerView: 2
+                        },
+                        992: {
+                            slidesPerView: 2.8
+                        }
+                    }
+                });
+            } catch(e) {
+                console.log(e.message);
+            }
         }
     });
 });
