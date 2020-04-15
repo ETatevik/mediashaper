@@ -276,11 +276,11 @@ h4.project_title_small{
 }
 .project_cats a{
     font-size: 14px;
-    line-height: 180%;
+    /* line-height: 180%; */
     color: #000000;
     transition: .2s;
     display: block;
-    padding: 0 8px;
+    padding: 4px 8px;
 }
 .home_projects_video:hover ~ .project_cats a,
 .project_cats:hover a,
@@ -435,7 +435,7 @@ h4.project_title_small{
     .project_cats.project_cats_for_mob a,
     .project_cats.project_cats_small a{
         font-size: 10px;
-        line-height: 180%;
+        /* line-height: 180%; */
     }
     .project_cats.project_cats_small{
         margin-top: 43px;
