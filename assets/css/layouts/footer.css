@@ -83,7 +83,7 @@ footer{
 }
 .footer_socials li a:after{
     content: "";
-    background-image: url('../../images/footer/footer_link.png');
+    background-image: url('../../images/icons/footer_link.png');
     background-position: center;
     background-size: cover;
     width: 15px;
