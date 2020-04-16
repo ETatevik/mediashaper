@@ -1,32 +1,43 @@
 .btn-open-singleProject{
 	cursor: pointer;
 }
-.et-projects-list li:hover{
+.et-projects-list li:hover,
+.btn-open-singleProject:hover{
     background: linear-gradient(90.43deg, #FC4A4A 0.04%, #6722FA 99.97%);
 	padding-left: 20px !important;
-	padding-right: 20px !important;
+	/* padding-right: 20px !important; */
+}
+a.btn-open-singleProject:hover{
+	background: transparent;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
 .et-projects-list li *{
 	transition: .2s;
 }
-.et-projects-list li:hover *{
+.et-projects-list li:hover *,
+.btn-open-singleProject:hover *{
     color: #ffffff !important;
 }
-.et-projects-list li:hover path{
+.et-projects-list li:hover path,
+.btn-open-singleProject:hover path{
 	fill: #ffffff;
 }
 
-.et-projects-list li:hover .project_cats.project_cats.project_cats_small li a{
+.et-projects-list li:hover .project_cats.project_cats.project_cats_small li a,
+.btn-open-singleProject:hover .project_cats.project_cats.project_cats_small li a{
     background: linear-gradient(to right, #FC4A4A, #DC26FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.et-projects-list li .project_cats.project_cats.project_cats_small li:hover{
+.et-projects-list li .project_cats.project_cats.project_cats_small li:hover,
+.btn-open-singleProject .project_cats.project_cats.project_cats_small li:hover{
 	background:#F5F5F5;
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
-.et-projects-list li .project_cats.project_cats.project_cats_small li:hover a{
+.et-projects-list li .project_cats.project_cats.project_cats_small li:hover a,
+.btn-open-singleProject .project_cats.project_cats.project_cats_small li:hover a{
     background: linear-gradient(to right, #FC4A4A, #DC26FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -51,5 +62,11 @@ h2.et-project-head{
 		font-weight: bold;
 		font-size: 30px;
 		line-height: 46px;
+	}
+	.et-projects-list li:hover,
+	.btn-open-singleProject:hover{
+	    background: linear-gradient(90.43deg, #FC4A4A 0.04%, #6722FA 99.97%);
+		padding-left: 20px !important;
+		padding-right: 20px !important;
 	}
 }
