@@ -3,6 +3,7 @@
 
 /* Menu */
 @import "layouts/menu.css";
+@import "layouts/menu-animation.css";
 
 /* Write US btn and Modal */
 @import "layouts/writeUs.css";

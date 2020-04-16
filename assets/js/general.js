@@ -1,4 +1,3 @@
-console.clear();
 jQuery(function ($) {
     $(document).ready(function () {
         // ------------------------------------
@@ -13,7 +12,6 @@ jQuery(function ($) {
                     $("path").css("stroke-dashoffset", $newUnit - $offsetUnit);
                     $("polygon").css("stroke-dashoffset", $newUnit - $offsetUnit);
                 });
-                console.log($('.service_icon_block').offset().top) 
             } catch(e) {
                 console.log(e);
             }
@@ -98,7 +96,7 @@ jQuery(function ($) {
                     }
                 });
             } catch(e) {
-                console.log(e.message);
+                // console.log(e.message);
             }
 
             // Services BG animated
@@ -156,7 +154,7 @@ jQuery(function ($) {
                     }
                 });
             } catch(e) {
-                console.log(e.message);
+                // console.log(e.message);
             }
 
             try {
@@ -185,7 +183,7 @@ jQuery(function ($) {
                     }
                 });
             } catch(e) {
-                console.log(e.message);
+                // console.log(e.message);
             }
         }
 
@@ -217,7 +215,7 @@ jQuery(function ($) {
                     }
                 });
             } catch(e) {
-                console.log(e.message);
+                // console.log(e.message);
             }
         }
     });

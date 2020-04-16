@@ -144,8 +144,16 @@ a{text-decoration:none;color:#FFF}
     width: 30px;
     height: 30px;
     border: 1px solid #FC4A4A;
+    transition: width .4s, height .4s, border .4s;
     z-index: 12000;
-    /*opacity: 0.5*/
+    opacity: 0.5
+}
+.site_cursor .circle-cursor--outer.big{
+    width: 45px;
+    height: 45px;
+    border: 3px solid #FC4A4A;
+    margin: -6px;
+    opacity: 1;
 }
 .site_cursor .circle-cursor {
     position: fixed;
@@ -157,9 +165,9 @@ a{text-decoration:none;color:#FFF}
 button, a{
     cursor: pointer;
 }
-/*.site_cursor, .site_cursor a, button, input, textarea {
+.site_cursor, .site_cursor a, button, input, textarea {
     cursor: none
-}*/ 
+}
 
 /* et classes */
 .text-center{

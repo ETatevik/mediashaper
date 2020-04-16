@@ -76,11 +76,52 @@
                 <div class="container">
                     <div class="row align-content-center">
                         <div class="col-12 col-lg-7">
-                            <ul class="menu-list">
-                                <li><a href="projects.html">Проекты</a></li>
-                                <li><a href="services.html">Услуги</a></li>
-                                <li><a href="news.html">Медаицентр</a></li>
-                            </ul>
+                            <svg class="hidden">
+                                <defs>
+                                    <filter id="filter-1">
+                                        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+                                        <feOffset dx="-90" result="warpOffset"></feOffset>
+                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+                                    </filter>
+                                    <filter id="filter-2">
+                                        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="10" result="warp"></feTurbulence>
+                                        <feOffset dx="-90" result="warpOffset"></feOffset>
+                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="60" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+                                    </filter>
+                                    <filter id="filter-3">
+                                        <feTurbulence type="fractalNoise" baseFrequency="0.15 0.02" numOctaves="3" result="warp"></feTurbulence>
+                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="0" in="SourceGraphic" in2="warp"></feDisplacementMap>
+                                    </filter>
+                                    <filter id="filter-4">
+                                        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="5" result="warp"></feTurbulence>
+                                        <feOffset dx="-90" result="warpOffset"></feOffset>
+                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="35" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+                                    </filter>
+                                    <filter id="filter-5">
+                                        <feTurbulence type="fractalNoise" baseFrequency="0.01 0.7" numOctaves="5" result="warp"></feTurbulence>
+                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="0" in="SourceGraphic" in2="warp"></feDisplacementMap>
+                                    </filter>
+                                    <filter id="filter-6">
+                                        <feTurbulence type="fractalNoise" baseFrequency="0.01 0.07" numOctaves="5" seed="2" result="noise"></feTurbulence>
+                                        <feDisplacementMap in="SourceGraphic" in2="warp" scale="0" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+                                    </filter>
+                                    <filter id="filter-7">
+                                        <feTurbulence type="fractalNoise" baseFrequency="1" numOctaves="5" result="warp"></feTurbulence>
+                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="90" in="SourceGraphic" in2="warp"></feDisplacementMap>
+                                    </filter>
+                                </defs>
+                            </svg>
+
+                            <nav class="effect_menu menu--linethrough">
+                                <a class="menu__link menu__link--1" href="projects.html"><span class="menu__link-inner">Проекты</span><span class="menu__link-deco" style="filter: none;"></span></a>
+                                <a class="menu__link menu__link--2" href="services.html"><span class="menu__link-inner">Услуги</span><span class="menu__link-deco" style="filter: none;"></span></a>
+                                <a class="menu__link menu__link--3" href="news.html"><span class="menu__link-inner">Медаицентр</span><span class="menu__link-deco" style="filter: none;"></span></a>
+                            </nav>
+                            <!--                            <ul class="menu-list">-->
+                            <!--                                <li><a href="projects.html">Проекты</a></li>-->
+                            <!--                                <li><a href="services.html">Услуги</a></li>-->
+                            <!--                                <li><a href="news.html">Медаицентр</a></li>-->
+                            <!--                            </ul>-->
                         </div>
                         <div class="col-12 col-lg-5 menu_right_block ">
                             <div class="footer_right">
@@ -651,8 +692,11 @@
 <script src="assets/js/plugins/cursor.js"></script>
 <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.1/pixi.min.js"></script>
 <script src="assets/js/plugins/main.js"></script>
 <script src="assets/js/general.js"></script>
+<script src="assets/js/menu/menu.js"></script>
+<script src="assets/js/menu/menu2.js"></script>
 
 </body>
 </html>
