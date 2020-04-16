@@ -60,7 +60,7 @@
 .menu--linebefore .menu__link-deco {
     bottom: 0;
     left: 0;
-    height: 30px;
+    height: 20px;
     width: 100%;
     background: linear-gradient(90deg, rgb(225, 16, 250) 0%, rgba(128,29,253,1) 50%);
 }
@@ -81,13 +81,13 @@
 }
 
 .menu--linethrough .menu__link-deco {
-    bottom: calc(50% - (30px / 2));
+    bottom: calc(50% - (20px / 2));
 }
 
 .menu--twolines .menu__link-deco {
     height: 100%;
     background: none;
-    border: 30px solid rgba(128,29,253,1);
+    border: 20px solid rgba(128,29,253,1);
     border-right: 0;
     border-left: 0;
 }
@@ -116,7 +116,7 @@
 
 .menu--linebefore .menu__link-deco {
     width: 6vw;
-    bottom: calc(50% - (30px / 2));
+    bottom: calc(50% - (20px / 2));
 }
 
 .menu--linebefore .menu__link:hover .menu__link-inner {
