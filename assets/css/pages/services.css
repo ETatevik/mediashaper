@@ -49,7 +49,7 @@
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
-	background-image: url('../../images/icons/services-arrow.png');
+	background-image: url('../../images/icons/services-arrow.svg');
 	margin-left: 13px;
 }
 .et-services-block:hover .et-bg-animated{
@@ -59,9 +59,7 @@
 	color: #ffffff;
 }
 .et-services-block:hover > .et-bg-animated-content:after{
-	background-image: url('../../images/icons/services-arrow-hover.png');
-	width: 58px;
-	margin-left: 34px;
+	background-image: url('../../images/icons/services-arrow-hover.svg');
 }
 
 /* Media */
@@ -96,10 +94,5 @@
 	}
 	.et-services-block > .et-bg-animated-content:after{
 		width: 42.29px;
-	}
-	.et-services-block:hover > .et-bg-animated-content:after{
-		background-image: url('../../images/icons/services-arrow-hover.png');
-		width: 42.29px;
-		margin-left: 13px;
 	}
 }
