@@ -132,20 +132,20 @@ a{text-decoration:none;color:#FFF}
 }
 
 /* Cursor */
-/* .site_cursor .circle-cursor--inner {
+ .site_cursor .circle-cursor--inner {
     width: 5px;
     height: 5px;
     left: -2.5px;
     top: -2.5px;
     z-index: 11000;
     background: #FC4A4A
-} */
-/*.site_cursor .circle-cursor--outer {
+} 
+.site_cursor .circle-cursor--outer {
     width: 30px;
     height: 30px;
     border: 1px solid #FC4A4A;
     z-index: 12000;
-    /*opacity: 0.5
+    /*opacity: 0.5*/
 }
 .site_cursor .circle-cursor {
     position: fixed;
@@ -154,9 +154,12 @@ a{text-decoration:none;color:#FFF}
     pointer-events: none;
     border-radius: 50%
 }
-.site_cursor, .site_cursor a, button, input, textarea {
+button, a{
+    cursor: pointer;
+}
+/*.site_cursor, .site_cursor a, button, input, textarea {
     cursor: none
-} */
+}*/ 
 
 /* et classes */
 .text-center{

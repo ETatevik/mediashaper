@@ -244,12 +244,13 @@
 .projects_tad > h4{
     font-weight: normal;
 }
-h4.project_title_small{
+a.project_title_small{
     margin-bottom: 0;
     font-weight: normal;
 }
 .project_excerpt{
     font-size: 14px;
+    color: #1C1A1B;
 }
 .project_cats{
     position: absolute;
@@ -409,12 +410,12 @@ h4.project_title_small{
     .project_excerpt{
         display: none;
     }
-    h4.project_title{
+    a.project_title{
         font-size: 18px;
         line-height: 21px;
         margin: 16px 0;
     }
-    h4.project_title > span{
+    a.project_title > span{
         display: inline;
     }
     .project_cats{

@@ -61,7 +61,11 @@ header.dark-header .site_title a{
     color: #000000;
     text-decoration: none;
 }
-
+#primary-menu li:hover a{
+    background: linear-gradient(to right, #FC4A4A, #DC26FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .gradient_text {
     margin: 0;
     font-family: Suisse Intl;
