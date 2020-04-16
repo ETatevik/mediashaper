@@ -35,9 +35,9 @@
 	padding-left: 20px;
 	margin-left: auto;
 }
-.swiper-slide  > img{
+/* .swiper-slide  > img{
 	height: 493px !important;
-}
+} */
 .swiper-button-next, .swiper-button-prev{
 	position: static;
 	margin-top: 0;
@@ -199,7 +199,7 @@
 	.slider-btns{
 		display: none;
 	}
-	.swiper-slide > img{
+	/* .swiper-slide > img{
 		height: 246px !important;
-	}
+	} */
 }
