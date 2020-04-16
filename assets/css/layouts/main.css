@@ -138,22 +138,28 @@ a{text-decoration:none;color:#FFF}
     left: -2.5px;
     top: -2.5px;
     z-index: 11000;
-    background: #FC4A4A
-} 
+    background: #FC4A4A;
+     opacity: 0;
+}
+.site_cursor .circle-cursor--inner.hide{
+     display: none;
+ }
 .site_cursor .circle-cursor--outer {
     width: 30px;
     height: 30px;
     border: 1px solid #FC4A4A;
     transition: width .4s, height .4s, border .4s;
     z-index: 12000;
-    opacity: 0.5
+    opacity: 0;
+}
+.site_cursor:hover .circle-cursor--outer,  .site_cursor:hover .circle-cursor--inner{
+    opacity: 1;
 }
 .site_cursor .circle-cursor--outer.big{
     width: 45px;
     height: 45px;
-    border: 3px solid #FC4A4A;
+    border: 1px solid #FC4A4A;
     margin: -6px;
-    opacity: 1;
 }
 .site_cursor .circle-cursor {
     position: fixed;
@@ -166,7 +172,7 @@ button, a{
     cursor: pointer;
 }
 .site_cursor, .site_cursor a, button, input, textarea {
-    cursor: none
+    cursor: none!important;
 }
 
 /* et classes */
